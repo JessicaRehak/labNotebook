@@ -12,6 +12,7 @@ Building the website:
 * I should probably just delete everything in the main branch
 
 Things to look at adding in the future:
+
 * Better CSS (when I have free time)
 * git plugin, when I actually start contributing to any projects
 
