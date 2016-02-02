@@ -1,2 +1,4 @@
 name: Joshua Rehak
 markdown: kramdown
+
+permalink: /labNotebook/:year/:month/:day/:title
