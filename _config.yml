@@ -1,4 +1,5 @@
 name: Joshua Rehak
 markdown: kramdown
 
+url: "jsrehak.github.io/labNotebook"
 permalink: /labNotebook/:year/:month/:day/:title
