@@ -3,17 +3,18 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css"
+			      href="/labNotebook/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
+		      <ul id="navbar">
+			<li><a href="/labNotebook/index.html">Home</a></li>
+			<li><a href="/labNotebook/entries.html">Entries</a></li>
+			<li><a href="/labNotebook/meetings.html">Meetings</a></li>
+			<li><a href="/labNotebook/papers.html">Papers</a></li>
+			<li><a href="">Resume</a></li>
+		      </ul>
+
 			<div class="container">
 
 			{{ content }}

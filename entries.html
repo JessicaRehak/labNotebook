@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Lab Notebook Entries"
+---
+<div class="full-list-box">
+  All notebook entries:
+  <ul>
+    {% for post in site.categories.entry  %}
+    <li>
+      <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
+      date: '%m/%d/%Y' }}
+      - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

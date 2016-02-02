@@ -2,12 +2,46 @@
 layout: default
 title: "Lab Notebook Front Page"
 ---
-
-<ul>
-  {% for post in site.posts %}
+<div class="main-box">
+  Recent notebook entries
+  <ul>
+    {% for post in site.categories.entry limit: 5 %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
+      date: '%m/%d/%Y' }}
+      - {{ post.title }}</a>
     </li>
   {% endfor %}
-</ul>
+  </ul>
+</div>
 
+<div class="floating-box">
+
+  Recent meeting notes
+  <ul>
+    {% for post in site.categories.meeting limit:5 %}
+    <li>
+
+      <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
+      date: '%m/%d/%Y' }}
+      - {{ post.title }}</a>
+
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="floating-box">
+  Recent paper notes
+  <ul>
+    {% for post in site.categories.paper limit:5 %}
+    <li>
+
+      <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
+      date: '%m/%d/%Y' }}
+      - {{ post.title }}</a>
+
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Meetings"
+---
+<div class="full-list-box">
+  All paper notes:
+  <ul>
+    {% for post in site.categories.paper  %}
+    <li>
+      <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
+      date: '%m/%d/%Y' }}
+      - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
