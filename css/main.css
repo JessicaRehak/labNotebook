@@ -1,15 +1,19 @@
 body {
-    margin: 10px auto;
-    width: 90%;
+    /*margin: 10px auto;
+    width: 90%;*/
     font-size: .8em;
+    margin: 0;
+    width: 100%;
 }
 
 #navbar {
     list-style-type: none;
+    margin: 0;
     margin-bottom: 20px;
+    width:100%;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3B7EA1;
 }
 
 #navbar > li {
@@ -25,11 +29,13 @@ body {
 }
 
 #navbar > li > a:hover {
-    background-color: #111;
+    background-color: #C4820E;
 }
 
+/* Boxes for index */
+
 .full-list-box{
-    width:100%;
+    width:90%;
     height:100%;
     padding: 5px;
     margin: 0;
@@ -37,10 +43,10 @@ body {
 
 .main-box{
     overflow:auto;
-    width: 100%;
+    width: 90%;
     height: 200px;
     padding: 5px;
-    margin: 0;
+    margin: 10px;
 }
 
 .floating-box{
@@ -52,15 +58,27 @@ body {
     padding: 5px;
 }
 
+/* Posts */
 p.meta{
     border-bottom: 1px solid #d5d5d5;
     font-size: 0.8em;
     padding-bottom: 5px;
+    margin: 10px;
+}
+
+div.post{
+    margin: 10px;
+}
+
+h1.title{
+    margin: 10px;
 }
 
 /* Footer style */
 
 footer {
+    color: #999;
+    margin: 10px;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
