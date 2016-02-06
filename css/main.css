@@ -30,6 +30,7 @@ body {
 
 #navbar > li > a:hover {
     background-color: #C4820E;
+    color:black;
 }
 
 /* Boxes for index */
@@ -53,7 +54,7 @@ body {
     display: inline-block;
     overflow:auto;
     width: 40%;
-    height: 100px;
+    height: 200px;
     margin: 10px;
     padding: 5px;
 }

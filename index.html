@@ -6,11 +6,11 @@ title: "Lab Notebook Front Page"
 <div class="main-box">
   Recent notebook entries
   <ul>
-    {% for post in site.categories.entry limit: 5 %}
+    {% for post in site.categories.entry limit: 10 %}
     <li>
       <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
-      date: '%m/%d/%Y' }}
-      - {{ post.title }}</a>
+      date: '%m/%d/%Y' }}</a>
+      - {{ post.title }}
     </li>
   {% endfor %}
   </ul>
@@ -24,8 +24,8 @@ title: "Lab Notebook Front Page"
     <li>
 
       <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
-      date: '%m/%d/%Y' }}
-      - {{ post.title }}</a>
+      date: '%m/%d/%Y' }}</a>
+      - {{ post.title }}
 
     </li>
     {% endfor %}
@@ -39,8 +39,8 @@ title: "Lab Notebook Front Page"
     <li>
 
       <a class="post_list" href="{{ post.url | prepend: site.baseurl }}">{{ post.date |
-      date: '%m/%d/%Y' }}
-      - {{ post.title }}</a>
+      date: '%m/%d/%Y' }}</a>
+      - {{ post.title }}
 
     </li>
     {% endfor %}
