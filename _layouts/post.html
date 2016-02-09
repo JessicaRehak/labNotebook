@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+<article class="markdown-body">
 <h1 class="title">{{ page.title }}</h1>
 <p class="meta">Dated: {{ page.date | date_to_string }} | Tags: {{ page.tags }}</p>
 <div class="post">
   {{ content }}
 </div>
+</article>

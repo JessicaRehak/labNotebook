@@ -4,3 +4,7 @@ markdown: kramdown
 url: "jsrehak.github.io"
 baseurl: /labNotebook
 permalink: /:categories/:year/:month/:day/:title
+
+kramdown:
+  input: GFM
+  hard_wrap: false
