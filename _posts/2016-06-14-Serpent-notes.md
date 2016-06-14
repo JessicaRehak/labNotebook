@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serpent 2 Day one
+title: Serpent 2, Day 1
 categories: entry
 tags: serpent, code, INL
 ---
@@ -22,10 +22,8 @@ to `/usr/local/include/standard`
 CC       = /usr/local/Cellar/clang-omp/2015-04-01/bin/clang-omp -I
 /usr/local/include/standard -I /usr/local/include/libiomp
 ```
-
-In retrospect, I see that homebrew puts (what I assume is) a symbolic
-link in `/usr/local/bin`, so I can just use that next time.
-
+  In retrospect, I see that homebrew puts (what I assume is) a symbolic
+  link in `/usr/local/bin`, so I can just use that next time.
 4. Commented out GD libraries <- what are these?
 
 # Serpent Notes:
@@ -57,6 +55,8 @@ link in `/usr/local/bin`, so I can just use that next time.
 
 Main particle tracking.
 
+If using delta tracking, calls `trk = MoveDT`
+
 ## trackmode.c
 
 **Called by:** tracking.c
@@ -65,9 +65,14 @@ Determines if delta-tracking or surface-tracking is used for the next
 pathlength.
 
 `RDB[DATA_DT_ENFORCE_NEXT_TRACK`: if this is `YES`, will force delta tracking
+
 `RDB[DATA_DT_NTHRESH]`: delta tracking threshold, set to 0.1 in
 `initdata.c`. There is a different value for other particles.
 
 `return TRACK_MODE_DT;`: delta track on next collision
+
 `return TRACK_MODE_ST;`: surface track on next collision
+
+## MoveDT.c
+
 
